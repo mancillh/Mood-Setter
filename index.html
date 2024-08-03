@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Setter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="aclonica-regular">
+    <div id="outer-box" class="columns is-mobile is-vcentered is-centered">
+        <div id="welcome-message" class="column is-full has-text-centered"></div> <!-- Container for the welcome message -->
+        <div id="button-box" class="column is-full has-text-centered">
+            <button class="button is-primary" id="myMoodButton">My Mood</button>
+        </div>
+        <div id="music-box" class="box column is-one-quarter">What's your Mood?</div>
+        <div id="gif-box" class="box column is-one-quarter">What are your Interests?</div>
+        <img class="giphy-logo" src="./assets/images/GIPHY logo.png" alt="GIPHY logo">
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal" id="userModal">
+        <div class="modal-background"></div>
+        <div class="modal-card glowing-modal">
+            <header class="modal-card-head glowing-header">
+                <p class="modal-card-title">Set Your Custom Mood</p>
+                <button class="delete" aria-label="close" id="closeModal"></button>
+            </header>
+            <section class="modal-card-body glowing-body">
+                <form id="userForm">
+                    <div class="field glowing-field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input glowing-input" type="text" id="userName" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="field glowing-field">
+                        <label class="label">Mood</label>
+                        <div class="control">
+                            <input class="input glowing-input" type="text" id="userMood" placeholder="Enter your mood">
+                        </div>
+                    </div>
+                    <div class="field glowing-field">
+                        <label class="label">Interests</label>
+                        <div class="control">
+                            <input class="input glowing-input" type="text" id="userInterests" placeholder="Enter your interests">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot glowing-footer">
+                <button class="button is-success" id="saveUser">Save</button>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
