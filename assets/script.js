@@ -255,7 +255,7 @@ function clearAnimations() {
 
 // Function to fetch data from YouTube API
 const fetchYouTubeData = (mood, musicBox) => {
-    const apiKey = 'AIzaSyBn-nf1Q4mq1qw_QElG_AKuMiAQNaQZ3c8'; 
+    const apiKey = 'AIzaSyD7CaPrS07ScGSlxgeQjM8m9xVrnjo6_Xs'; 
     const searchTerm = `${mood} beat`; // Append "beat" to the user's mood
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(searchTerm)}&videoSyndicated=true&videoEmbeddable=true&maxResults=5&key=${apiKey}`;
     fetch(url)

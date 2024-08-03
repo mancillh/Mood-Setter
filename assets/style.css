@@ -10,14 +10,15 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.aclonica-regular {
-    font-family: "Aclonica", sans-serif;
-    font-weight: 400;
+.Georgia {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
     font-style: normal;
+    font-size: 20px;
 }  
 #outer-box {
     width: 100%;
-    height: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,24 +26,34 @@ html, body {
     background-color: black;
     margin: 0; 
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
+    padding: 0px;  
+}
+#welcome-message {
+    padding: 0px;
+    margin-top: 45px;
+    margin-bottom: 10px;
 }
 #button-box {
     margin-bottom: 0px;
 }
 #music-box, #gif-box {
-    height: 35%;
+    height: 5%;
     width: 60%;
     background-color: #beb7b8;
     margin: 10px;
-    box-shadow: 0 0 50px 15px rgba(0, 255, 255, 0.4);
 }
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.below-gif {
+    padding: 20px;
+}
+#myMoodButton {
+    font-weight: 700;
+}
 .happy {
     background-color: #00b4ff !important;
 }
@@ -61,7 +72,6 @@ html, body {
 
 .romantic {
     background-color: #ffc8dd !important;
-
 }
 
 .inspired {
@@ -75,29 +85,8 @@ html, body {
 .giphy-logo {
     margin-top: 20px;
     align-self: center;
-    position: absolute;
+    position: relative;
     bottom: 20px;
-}
-
-.glowing-modal {
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
-}
-
-.glowing-header, .glowing-body, .glowing-footer {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
-}
-
-.glowing-field .label {
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
-}
-
-.glowing-input {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
-}
-
-.glowing-input:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
 }
 
 
