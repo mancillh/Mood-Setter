@@ -39,7 +39,7 @@ To get started with **Mood Setter**, follow these steps:
     ```
 
 ## Usage
-1. Open your web browser and navigate to `https://digitalscribe53.github.io/Mood-Setter`.
+1. Open your web browser and navigate to `https://mancillh.github.io/Mood-Setter/`.
 2. Enter your current mood in the provided input field.
 3. Enjoy the generated background color, images or GIFs, and playlist tailored to your mood.
 
